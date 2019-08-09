@@ -16,7 +16,7 @@ def main():
         tree = etree.parse(filePath, xmlParser)
         root = tree.getroot()
         sort_elements(root)
-        tree.write("output.xml", pretty_print=True)
+        tree.write(filePath, pretty_print=True)
 
 
 main()
